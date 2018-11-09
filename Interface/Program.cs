@@ -16,7 +16,7 @@ namespace Interface
             Interface1 d = new Dvd("Star Wars IV " , 210);
 
             var katalogus = new List<Interface1>();
-
+            
 
             katalogus.Add(new Konyv("Harry Potter","J K Rowlings", "1234555"));
             katalogus.Add(new Dvd("Star Wars IV", 210));
