@@ -6,10 +6,23 @@ using System.Threading.Tasks;
 
 namespace Interface
 {
-    class Dvd : Interface1
+    class Dvd : Interface1, IComparable<Dvd>
     {
         string cim;
         int hossz;
+
+        public string Cim
+        {
+            get
+            {
+                return cim;
+            }
+
+            set
+            {
+                cim = value;
+            }
+        }
 
         public Dvd(string cim, int hossz)
         {
@@ -34,6 +47,20 @@ namespace Interface
                 return hossz/60.0;
         }
 
-
+        public int CompareTo(Dvd other)
+        {
+            if (this.hossz < other.hossz)
+            {
+                return -1;
+            }
+            else if (this.hossz > other.hossz)
+            {
+                return 1;
+            }
+            else {
+                return 0;
+            }
+                
+        }
     }
 }
