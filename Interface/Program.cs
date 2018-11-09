@@ -31,6 +31,7 @@ namespace Interface
 
             d3.Cim = "Star Wars II";
 
+        
            
 
             var dvdk = new List<Dvd>();
@@ -39,10 +40,14 @@ namespace Interface
             dvdk.Add(d3);
             Console.WriteLine(dvdk[0].FutasIdoOra());
 
+
+            dvdk.Sort();
             foreach (var e in dvdk)
             {
                 Console.WriteLine(e.MegjelenitendoNev() + " ", e.FutasIdoOra());
             }
+
+           
 
             Console.ReadLine();
         }

@@ -49,17 +49,20 @@ namespace Interface
 
         public int CompareTo(Dvd other)
         {
-            if (this.hossz < other.hossz)
-            {
-                return -1;
-            }
-            else if (this.hossz > other.hossz)
-            {
-                return 1;
-            }
-            else {
-                return 0;
-            }
+            /*  if (this.hossz < other.hossz)
+              {
+                  return -1;
+              }
+              else if (this.hossz > other.hossz)
+              {
+                  return 1;
+              }
+              else {
+                  return 0;
+              }
+              */
+            return this.hossz.CompareTo(other.hossz);
+
                 
         }
     }
